@@ -59,6 +59,9 @@ list-style-type:none;
 
 .header{
     border-bottom: 1px solid #e7e9fc;
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
     
@@ -103,9 +106,7 @@ list-style-type:none;
 }
 .header-nav-menu{
     display: flex;
-    gap: 40px;
-   
-    
+    gap: 40px; 
 }
 
 .header-address{
@@ -122,7 +123,7 @@ list-style-type:none;
         line-height:1.5;
         letter-spacing:0.02em;
         position: relative;
-        transition: color 300ms ease;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover, .header-nav-link:focus{
@@ -131,12 +132,13 @@ list-style-type:none;
 
 .current {
     position: relative;
+    color: #404bbf
 }
 
 .current::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -154,7 +156,7 @@ font-size:16px;
 font-weight:400;
 line-height:1.5;
 letter-spacing:0.02em; 
-transition: color 300ms ease;   
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .header-address-link:hover, .header-address-link:focus {
@@ -166,16 +168,15 @@ transition: color 300ms ease;
 
 /**-------------------------------------ENTRY----------------------------------*/
 .entry {
-    background-color: var(--navyblue);
     background-image:linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office\ 1.jpg);
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 188px 0;
     background-image: ;
 }
  
-.entry-container{
-
-    
-}
   
 .entry-intro {
     color: var(--white);
@@ -205,7 +206,7 @@ transition: color 300ms ease;
             min-width: 169px;
             padding: 16px 32px;
             margin: 0 auto;
-            transition: background-color 300ms ease;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .button:hover, .button:focus{
