@@ -614,7 +614,8 @@ color: var(--white);
     overflow: hidden;
 }
 
-.portfolio-cover-container:is(:hover, :focus) .portfolio-cover-text{
+.portfolio-cover-container:hover .portfolio-cover-text,
+.portfolio-cover-container:focus .portfolio-cover-text{
     transform: translateY(0%);
 }
 
@@ -625,9 +626,11 @@ color: var(--white);
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
    padding: 40px 32px;
     color: var(--cloud);
     font-size: 16px;
+    overflow: auto;
         line-height: 1.5;
         letter-spacing: 0.02em;
         background: var(--iris);
