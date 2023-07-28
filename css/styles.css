@@ -543,7 +543,6 @@ margin-right: 120px;
         background: var(--cloud);
         cursor: pointer;
         border-radius: 4px;
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -615,13 +614,11 @@ color: var(--white);
     overflow: hidden;
 }
 
-.portfolio-cover-container:hover .portfolio-cover-text{
+.portfolio-cover-container:is(:hover, :focus) .portfolio-cover-text{
     transform: translateY(0%);
 }
 
-.portfolio-cover-container:focus .portfolio-cover-text {
-    transform: translateY(0%);
-}
+
 
 .portfolio-cover-text{
     position: absolute;
